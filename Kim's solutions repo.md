@@ -152,50 +152,63 @@ windowsupdates110
 **:computer:Command:**
 
 ```sh
-cat readme
+set-location c:\users\century11
+dir -force .\Downloads 
+(I tried the directories one by one, figuring out a better way to do it)
 ```
 
 **:unlock:Password:**
 
 ```sh
-ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+secret_sauce
 ```
 
 ## Level 12 > 13
 **:computer:Command:**
 
 ```sh
-cat < - 
+(Step 1: get the name of the domain controller)
+get-addomaintcontroller
+(The name is UTW - step 2, get description of the computer)
+get-adcomputer -properties description -filter 'Name -like "UTW"’
+(Description is i_authenticate)
+(Step 3: get the name of the file on the desktop)
+ls 
+(Name is _things)
 ```
 
 **:unlock:Password:**
 
 ```sh
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+i_authenticate_things 
 ```
 
 ## Level 13 > 14
 **:computer:Command:**
 
 ```sh
-cat < - 
+get-content countmywords -delimiter ' ' | measure-object
 ```
 
 **:unlock:Password:**
 
 ```sh
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+755
 ```
 
 ## Level 14 > 15
 **:computer:Command:**
 
 ```sh
-cat < - 
+ls
+(We see a file named countpolos)
+get-content countpolos
+(So many words!)
+get-content countpolos | select-string -pattern "polo" -allmatches | measure-object -word
 ```
 
 **:unlock:Password:**
 
 ```sh
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+19482
 ```
