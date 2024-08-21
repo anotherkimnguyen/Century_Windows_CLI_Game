@@ -117,26 +117,36 @@ get-content unique.txt | sort-object -unique | measure-object
 **:computer:Command:**
 
 ```sh
-cat readme
+ls
+get-content Word_File.txt
+(We get a bunch of words in a huge chunk - let's list them for easier use)
+get-content Word_File.txt -Delimiter ‘ ‘
+(Now we want the 161st so we use -index 160 (count starts at 0)
+get-content Word_file.txt -Delimiter ' ' | select-object -index 160
 ```
 
 **:unlock:Password:**
 
 ```sh
-ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+pierid
 ```
 
 ## Level 10 > 11
 **:computer:Command:**
 
 ```sh
-cat < - 
+(First half of the password)
+get-wmiobject win32_service | where-object {$_.Name -eq 'wuauserv'} | select-object description
+(10th word is "windows", 8th word is "updates"
+(Second half of the password)
+ls
+(Name of the file is 110)
 ```
 
 **:unlock:Password:**
 
 ```sh
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+windowsupdates110
 ```
 ## Level 11 > 12
 **:computer:Command:**
