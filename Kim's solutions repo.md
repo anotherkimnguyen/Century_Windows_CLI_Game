@@ -16,51 +16,58 @@ $psversiontable (to see build version. Then go to the line with Name)
 **:computer:Command:**
 
 ```sh
-cat < - 
+(It appears wget is an alias for invoke-webrequest, so the first part of our password is invoke-webrequest. Now we only need to add the name of the file on the desktop)
+ls
+(We see a file named "443")
 ```
 
 **:unlock:Password:**
 
 ```sh
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+invoke-webrequest443
 ```
 ## Level 3 > 4
 **:computer:Command:**
 
 ```sh
-cat readme
+(get-childitem -path c:\users\century3\desktop -file).count
 ```
 
 **:unlock:Password:**
 
 ```sh
-ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+123
 ```
 
 ## Level 4 > 5
 **:computer:Command:**
 
 ```sh
-cat < - 
+ls
+cd "Can You Open Me"
 ```
 
 **:unlock:Password:**
 
 ```sh
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+34182
 ```
 
 ## Level 5 > 6
 **:computer:Command:**
 
 ```sh
-cat readme
+(First half of the password)
+get-addomain
+(The name is "underthewire")
+(Second half of the password)
+ls
 ```
 
 **:unlock:Password:**
 
 ```sh
-ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+underthewire3347
 ```
 
 ## Level 6 > 7
