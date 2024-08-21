@@ -74,19 +74,20 @@ underthewire3347
 **:computer:Command:**
 
 ```sh
-cat < - 
+(Similar to 3 > 4)
+(Get-ChildItem -Path "C:\Users\century3\Desktop" -Directory).Count
 ```
 
 **:unlock:Password:**
 
 ```sh
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+197
 ```
 ## Level 7 > 8
 **:computer:Command:**
 
 ```sh
-cat readme
+see later
 ```
 
 **:unlock:Password:**
@@ -99,13 +100,17 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 **:computer:Command:**
 
 ```sh
-cat < - 
+ls
+(There's only one file named "unique.txt"
+get-content unique.txt
+(We get a bunch of words - let's sort them and count them)
+get-content unique.txt | sort-object -unique | measure-object
 ```
 
 **:unlock:Password:**
 
 ```sh
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+696
 ```
 
 ## Level 9 > 10
