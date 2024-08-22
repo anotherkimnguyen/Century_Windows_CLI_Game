@@ -87,13 +87,17 @@ underthewire3347
 **:computer:Command:**
 
 ```sh
-see later
+(We need to move from Desktop to Home)
+set-location c:\users\century7
+ls
+get-childitem .\ -include *readme* -recurse
+get-content .\Downloads\Readme.txt
 ```
 
 **:unlock:Password:**
 
 ```sh
-ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+7points
 ```
 
 ## Level 8 > 9
