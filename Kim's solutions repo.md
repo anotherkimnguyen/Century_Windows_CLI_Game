@@ -45,6 +45,7 @@ invoke-webrequest443
 ```sh
 ls
 cd "Can You Open Me"
+ls
 ```
 
 **:unlock:Password:**
@@ -75,7 +76,7 @@ underthewire3347
 
 ```sh
 (Similar to 3 > 4)
-(Get-ChildItem -Path "C:\Users\century3\Desktop" -Directory).Count
+(Get-ChildItem -Path "C:\Users\century6\Desktop" -Directory).Count
 ```
 
 **:unlock:Password:**
@@ -172,7 +173,7 @@ secret_sauce
 
 ```sh
 (Step 1: get the name of the domain controller)
-get-addomaintcontroller
+get-addomaincontroller
 (The name is UTW - step 2, get description of the computer)
 get-adcomputer -properties description -filter 'Name -like "UTW"’
 (Description is i_authenticate)
@@ -191,7 +192,7 @@ i_authenticate_things
 **:computer:Command:**
 
 ```sh
-get-content countmywords -delimiter ' ' | measure-object
+get-content countmywords -delimiter ' ' | measure-object -word
 ```
 
 **:unlock:Password:**
