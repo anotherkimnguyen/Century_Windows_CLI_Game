@@ -189,7 +189,7 @@ get-content countpolos
 get-content countpolos | select-string -pattern "polo" -allmatches | measure-object -word
 ```
 
-**:unlock:Password:**
+**Password:**
 
 ```sh
 19482
